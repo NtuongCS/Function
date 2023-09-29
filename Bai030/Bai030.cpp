@@ -15,7 +15,7 @@ int main()
     float n;
     cout << "nhap so n: ";
     cin >> n;
-    float sum = tinhTong(n);
-    cout << "ket qua la: " << sum;
+    float sum1 = tinhTong(n);
+    cout << "ket qua la: " << sum1;
     return 0;
 }
