@@ -1,21 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int tinhTong(int n)
+float tinhTong(float n)
 {
-    int tinhTong = 0;
+    float tinhTong = 0;
     for (int i = 1; i <= n; i++)
     {
-        tinhTong += i * i;
+        tinhTong = tinhTong + 1/(2*i);
     }
     return tinhTong;
 }
 int main()
 {
-    int n;
+    float n;
     cout << "nhap so n: ";
     cin >> n;
-    int sum = tinhTong(n);
+    float sum = tinhTong(n);
     cout << "ket qua la: " << sum;
     return 0;
 }
