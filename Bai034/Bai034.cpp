@@ -4,9 +4,9 @@ using namespace std;
 float tinhTong(float n)
 {
     float tinhTong = 0;
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= 2*n+1; i=i+2)
     {
-        tinhTong = tinhTong +(float) 1 / (i*(i+1));
+        tinhTong = tinhTong + (float) i/(i + 1);
     }
     return tinhTong;
 }
