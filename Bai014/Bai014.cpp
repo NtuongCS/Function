@@ -2,6 +2,18 @@
 #include <cmath>;
 using namespace std;
 
+float luyThua32(float );
+
+int main()
+{
+	float x;
+	cout << "nhap so x: ";
+	cin >> x;
+	float xx32 = luyThua32(x);
+	cout << xx32;
+	return 0;
+}
+
 float luyThua32(float x)
 {
 	float x2 = x * x;
@@ -10,13 +22,4 @@ float luyThua32(float x)
 	float x16 = x8 * x8;
 	float x32 = x16 * x16;
 	return x32;
-}
-int main()
-{
-	float x;
-	cout << "nhap so x: ";
-	cin >> x;
-	float xMu32 = luyThua32(x);
-	cout << xMu32;
-	return 0;
 }

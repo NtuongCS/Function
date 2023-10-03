@@ -1,11 +1,8 @@
 #include<iostream>;
 using namespace std;
 
-int donVi(int n)
-{
-	int dv = n % 10;
-	return dv;
-}
+int donVi(int);
+
 int main()
 {
 	int n;
@@ -14,4 +11,9 @@ int main()
 	int dVi = donVi(n);
 	cout << "chu so hang don vi la: " << dVi;
 	return 0;
+}
+int donVi(int n)
+{
+	int dv = n % 10;
+	return dv;
 }

@@ -2,10 +2,8 @@
 #include <iostream>
 using namespace std;
 
-float chuVi(float n, float r)
-{
-	return  2 * n * r * sin(M_PI / n);
-}
+float chuVi(float, float );
+
 int main()
 {
 	float n, r;
@@ -16,4 +14,8 @@ int main()
 	float p = chuVi(n, r);
 	cout << "chu vi la: " << p;
 	return 0;
+}
+float chuVi(float n, float r)
+{
+	return  2 * n * r * sin(M_PI / n);
 }
