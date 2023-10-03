@@ -2,14 +2,8 @@
 #include <cmath>;
 using namespace std;
 
-float luyThua9(float x)
-{
-	float x2 = x * x;
-	float x4 = x2 * x2;
-	float x8 = x4 * x4;
-	float x9 = x8*x;
-	return x9;
-}
+float luyThua9(float);
+
 int main()
 {
 	float x;
@@ -18,4 +12,12 @@ int main()
 	float xMu9 = luyThua9(x);
 	cout <<"x mu 9="<<xMu9;
 	return 0;
+}
+float luyThua9(float x)
+{
+	float x2 = x * x;
+	float x4 = x2 * x2;
+	float x8 = x4 * x4;
+	float x9 = x8 * x;
+	return x9;
 }

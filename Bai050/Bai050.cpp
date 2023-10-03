@@ -1,6 +1,17 @@
 #include <iostream>
 using namespace std;
 
+int tongUocSo(int );
+
+int main()
+{
+    int n;
+    cout << "nhap so n: ";
+    cin >> n;
+    int sum = tongUocSo(n);
+    cout << "ket qua la: " << sum;
+    return 0;
+}
 int tongUocSo(int n)
 {
     int tong = 0;
@@ -10,14 +21,5 @@ int tongUocSo(int n)
             tong += i;
     }
     return tong;
-}
-int main()
-{
-    int n;
-    cout << "nhap so n: ";
-    cin >> n;
-    int sum = tongUocSo(n);
-    cout << "ket qua la: " << sum;
-    return 0;
 }
         

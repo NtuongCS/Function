@@ -1,15 +1,8 @@
 #include <iostream>
 using namespace std;
 
-float tinhTich(float x, int n)
-{
-    float tinhTich = 1;
-    for (int i = 1; i <= n; i++)
-    {
-        tinhTich = tinhTich * (x+i);
-    }
-    return tinhTich;
-}
+float tinhTich(float, int);
+
 int main()
 {
     float x;
@@ -21,4 +14,13 @@ int main()
     float tich = tinhTich(x, n);
     cout << "ket qua la: " << tich;
     return 0;
+}
+float tinhTich(float x, int n)
+{
+    float tinhTich = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        tinhTich = tinhTich * (x + i);
+    }
+    return tinhTich;
 }

@@ -2,10 +2,8 @@
 #include <iostream>
 using namespace std;
 
-float sxq(int r)
-{
-	return 4 * r * r * M_PI;
-}
+float sxq (float);
+
 int main()
 {
 	int r;
@@ -14,5 +12,9 @@ int main()
 	float  s = sxq(r);
 		cout << "dien tich xung quanh la: " << s;
 	return 0;
+}
+float sxq(float r)
+{
+	return 4 * r * r * M_PI;
 }
 

@@ -1,15 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int tinhTong(int n)
-{
-    int tinhTong = 0;
-    for (int i = 1; i <= n; i++)
-    {
-        tinhTong += i * i;
-    }
-    return tinhTong;
-}
+int tinhTong(int);
 int main()
 {
     int n;
@@ -18,4 +10,13 @@ int main()
     int sum = tinhTong(n);
     cout << "ket qua la: " << sum;
     return 0;
+}
+int tinhTong(int n)
+{
+    int tinhTong = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        tinhTong += i * i;
+    }
+    return tinhTong;
 }

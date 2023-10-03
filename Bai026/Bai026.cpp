@@ -2,11 +2,8 @@
 using namespace std;
 
 
-void hoanVi(int& a, int& b) {
-    a = a + b;
-    b = a - b;
-    a = a - b;
-}
+void hoanVi(int& ,int&);
+
 
 int main() {
     int x, y;
@@ -17,4 +14,10 @@ int main() {
     hoanVi(x, y);
     cout << "Sau khi hoan vi: x = " << x << ", y = " << y;
     return 0;
+}
+void hoanVi(int& a, int& b)
+{
+    a = a + b;
+    b = a - b;
+    a = a - b;
 }

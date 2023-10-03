@@ -1,6 +1,17 @@
 #include <iostream>
 using namespace std;
 
+int tichUocSo(int n);
+
+int main()
+{
+    int n;
+    cout << "nhap so n: ";
+    cin >> n;
+    int t = tichUocSo(n);
+    cout << "ket qua la: " << t;
+    return 0;
+}
 int tichUocSo(int n)
 {
     int  tich = 1;;
@@ -10,13 +21,4 @@ int tichUocSo(int n)
             tich += i;
     }
     return tich;
-}
-int main()
-{
-    int n;
-    cout << "nhap so n: ";
-    cin >> n;
-    int t = tichUocSo(n);
-    cout << "ket qua la: " << t;
-    return 0;
 }

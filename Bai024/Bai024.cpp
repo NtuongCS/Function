@@ -1,11 +1,8 @@
 #include<iostream>;
 using namespace std;
 
-int hangTram(int n)
-{
-	int ht = (n/100) % 10;
-	return ht;
-}
+int hangTram(int);
+
 int main()
 {
 	int n;
@@ -14,4 +11,9 @@ int main()
 	int hTram = hangTram(n);
 	cout << "chu so hang tram la: " << hTram;
 	return 0;
+}
+int hangTram(int n)
+{
+	int ht = (n / 100) % 10;
+	return ht;
 }

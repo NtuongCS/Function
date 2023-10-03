@@ -1,16 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int tichUocSo(int n)
-{
-    int  tong = 0;
-    for (int i = 1; i <= n; i=i+2)
-    {
-        if (n % i == 0)
-            tong +=i;
-    }
-    return tong;
-}
+int tichUocSo(int);
+
 int main()
 {
     int n;
@@ -19,4 +11,14 @@ int main()
     int t = tichUocSo(n);
     cout << "ket qua la: " << t;
     return 0;
+}
+int tichUocSo(int n)
+{
+    int  tong = 0;
+    for (int i = 1; i <= n; i = i + 2)
+    {
+        if (n % i == 0)
+            tong += i;
+    }
+    return tong;
 }

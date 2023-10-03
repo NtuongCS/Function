@@ -2,10 +2,7 @@
 #include <iostream>
 using namespace std;
 
-float trans (float c)
-{
-	return  (c*9/5)+32;
-}
+float trans(float);
 int main()
 {
 	float  c;
@@ -13,6 +10,10 @@ int main()
 	cin >> c;
 	float f = trans(c);
 	cout << "do f la: " << f;
-	return 0;
 }
+
+float trans(float c)
+	{	
+	return  (c * 9 / 5) + 32;
+	}
 	
