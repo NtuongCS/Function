@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 using namespace std;
 
 void Nhap(int&);
@@ -9,22 +10,22 @@ int main()
 {
 	int n;
 	Nhap(n);
-	cout << Tinhsohang(n);
+	cout << "s= " << Tinhsohang(n);
 	return 0;
 }
 void Nhap(int& n)
 {
-	cin >>  n;
+	cout << "Nhap n: ";
+	cin >> n;
 }
 float Tinhsohang(int n)
 {
 	float s = 0;
-	float t = 1;
 	int i = 1;
+
 	while (i <= n)
 	{
-		t = t * i;
-		s = s + i*t;
+		s = pow(i + s, (float)1 / (i + 1));
 		i = i + 1;
 	}
 	return s;

@@ -1,31 +1,31 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 using namespace std;
 
 void Nhap(int&);
-float Tinhsohang(int);
+void Tinh(int);
 
 int main()
 {
 	int n;
 	Nhap(n);
-	cout << Tinhsohang(n);
+	Tinh(n);
 	return 0;
 }
-void Nhap(int& n)
+void Nhap(int& a)
 {
-	cin >>  n;
+	cout << "Nhap : ";
+	cin >> a;
 }
-float Tinhsohang(int n)
+void Tinh(int n)
 {
 	float s = 0;
-	float t = 1;
 	int i = 1;
 	while (i <= n)
 	{
-		t = t * i;
-		s = s + i*t;
+		s = s + (float)1 / i;
+		cout << s << " ";
 		i = i + 1;
 	}
-	return s;
 }
